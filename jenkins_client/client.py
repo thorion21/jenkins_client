@@ -108,8 +108,8 @@ class JenkinsClient:
                 logging.info(f"Overall timeout: No status before timeout of {self.overall_max_timeout} secs")
                 sys.exit(1)
 
-            logging.info(f"job_poll_interval value: {job_poll_interval}, {type(job_poll_interval)}")
-            time.sleep(job_poll_interval)
+            # logging.info(f"job_poll_interval value: {job_poll_interval}, {type(job_poll_interval)}")
+            time.sleep(self.job_poll_interval)
 
 
 if __name__ == "__main__":
